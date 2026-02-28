@@ -15,6 +15,9 @@ public class SynonymChecker {
     }
 
     public boolean areSynonyms(String word1, String word2) {
+        word1 = word1.toLowerCase();
+        word2 = word2.toLowerCase();
+
         if (word1.equals(word2)) {
             return true;
         }
